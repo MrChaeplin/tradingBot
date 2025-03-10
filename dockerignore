@@ -1,0 +1,12 @@
+__pycache__/
+venv/
+
+utils/
+
+.env
+config/
+data/
+
+test_log.py
+
+trading_strategy/
