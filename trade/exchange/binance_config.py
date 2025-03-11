@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 import os
 
-load_dotenv(dotenv_path="../.env")
+load_dotenv(dotenv_path="../../.env")
 
 def binance () :
     api_key = os.getenv("BINANCE_API_KEY")

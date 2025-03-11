@@ -10,3 +10,10 @@ data/
 test_log.py
 
 trading_strategy/
+
+.gitignore
+.git
+Dokerfile
+docker/
+
+binance.json

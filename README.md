@@ -1,1 +1,3 @@
-# Trading Bot
+# Crypto Trading Bot
+
+The project is a
