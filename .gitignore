@@ -4,6 +4,7 @@ venv/
 utils/
 
 .env
+
 config/
 data/
 
