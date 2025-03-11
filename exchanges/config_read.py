@@ -1,24 +1,18 @@
-import json
-
-def load_config (filePath):
-    with open (filePath, "r") as file:
-        config = json.load(file)
-    return config
+from binance_config import binance
 
 class Binance:
-    def __init__(self, file_path):
-        config = load_config(file_path)
-        self.api_key = config["API_KEY"]
-        self.api_secret = config["API_SECRET"]
-        self.trade_symbol = config["TRADE_SYMBOL"]
+    def __init__(self):
+        apiKey, apiSecret = binance()
+        self.api_key = apiKey
+        self.api_secret = apiSecret
     
-    def get_api_key(self):
+    def binance_api_key(self):
         return self.api_key
 
-    def get_api_secret(self):
+    def binance_secret(self):
         return self.api_secret
 
-    def get_trade_symbol(self):
-        return self.trade_symbol
+binance = Binance ()
 
-binance = Binance ("../config/binance.json")
+print (binance.api_key
+       ,binance.api_secret) 
