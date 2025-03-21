@@ -13,6 +13,3 @@ class Binance:
         return self.api_secret
 
 binance = Binance ()
-
-print (binance.api_key
-       ,binance.api_secret) 
